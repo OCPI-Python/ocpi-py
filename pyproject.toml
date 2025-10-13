@@ -1,0 +1,62 @@
+[project]
+# Basic information
+name = "ocpi-py"
+version = "0.1.0"
+
+# Dependencies and requirements
+dependencies = ["ocpi-client>=0.1.4", "fastapi[standard]>=0.119.0"]
+requires-python = ">=3.10"
+
+# About your project
+authors = [{ name = "Leon" }]
+description = "OCPI implementatin based on FastAPI"
+readme = "README.md"
+license = "MIT"
+license-files = ["LICEN[CS]E*"]
+keywords = ["OCPI"]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Environment :: Web Environment",
+    "Intended Audience :: Developers",
+    "Operating System :: OS Independent",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Programming Language :: Python :: 3.13",
+    "Programming Language :: Python :: 3.14",
+    "Programming Language :: Python :: 3.15",
+    "Topic :: Internet :: WWW/HTTP",
+    "Topic :: Software Development :: Libraries :: Python Modules",
+]
+
+
+[project.urls]
+homepage = "https://github.com/OCPI-Python/ocpi-py"
+source = "https://github.com/OCPI-Python/ocpi-py.git"
+issues = "https://github.com/OCPI-Python/ocpi-cliepynt/issues"
+changelog = "https://github.com/OCPI-Python/ocpi-py/blob/master/CHANGELOG.md"
+funding = "https://github.com/OCPI-Python/ocpi-py"
+
+
+[build-system]
+requires = ["pdm-backend"]
+build-backend = "pdm.backend"
+
+
+[tool.pdm]
+distribution = true
+
+
+[tool.pytest.ini_options]
+addopts = """
+--exitfirst
+--pdb
+--pdbcls=IPython.terminal.debugger:TerminalPdb
+--cov
+--cov-report=term
+--cov-report=html
+--cov-report=xml
+--no-cov-on-fail
+"""
+asyncio_default_fixture_loop_scope = "function"
+log_level = "DEBUG"
