@@ -33,9 +33,13 @@ classifiers = [
 [project.urls]
 homepage = "https://github.com/OCPI-Python/ocpi-py"
 source = "https://github.com/OCPI-Python/ocpi-py.git"
-issues = "https://github.com/OCPI-Python/ocpi-cliepynt/issues"
+issues = "https://github.com/OCPI-Python/ocpi-py/issues"
 changelog = "https://github.com/OCPI-Python/ocpi-py/blob/master/CHANGELOG.md"
 funding = "https://github.com/OCPI-Python/ocpi-py"
+
+
+[project.optional-dependencies]
+dev = ["pytest-cov>=7.0.0", "ipykernel>=7.0.0"]
 
 
 [build-system]
