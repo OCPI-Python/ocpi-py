@@ -4,7 +4,7 @@ name = "ocpi-py"
 version = "0.1.0"
 
 # Dependencies and requirements
-dependencies = ["ocpi-client>=0.1.4", "fastapi[standard]>=0.119.0"]
+dependencies = ["ocpi-client>=0.1.4", "fastapi[standard]>=0.120.0"]
 requires-python = ">=3.10"
 
 # About your project
@@ -39,7 +39,7 @@ funding = "https://github.com/OCPI-Python/ocpi-py"
 
 
 [project.optional-dependencies]
-dev = ["pytest-cov>=7.0.0", "ipykernel>=7.0.0"]
+dev = ["pytest-cov>=7.0.0", "ipykernel>=7.0"]
 
 
 [build-system]
