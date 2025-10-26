@@ -2,3 +2,6 @@
 .vagrant/
 *.box
 _site/
+.coverage
+coverage.xml
+__pycache__/
